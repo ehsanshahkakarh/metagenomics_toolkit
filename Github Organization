@@ -1,10 +1,11 @@
 metagenomics_toolkit/               # <- top level of the GitHub repo
-│
+│  
+├── Github organization              # clear overview of metagenomics-toolkit github repository organization
 ├── README.md                        # clear install + usage instructions
 ├── LICENSE                          # open license like MIT
-├── requirements.txt                 # easy pip install
-├── environment.yml                  # easy conda install (alternative)
-├── setup.sh                         # optional setup script (makes folders etc.)
+├── requirements.txt                 # easy pip install                            --not complete!!!
+├── environment.yml                  # easy conda install (alternative)            --not complete!!! 
+├── setup.sh                         # optional setup script (makes folders etc.)  --not complete!!! 
 │
 ├── data/                             # (folder created after cloning, user must download data manually)
 │   ├── README.md                     # <- explain here: "Download datasets manually to this folder"
