@@ -1,0 +1,45 @@
+metagenomics_toolkit/               # <- top level of the GitHub repo
+│
+├── README.md                        # clear install + usage instructions
+├── LICENSE                          # open license like MIT
+├── requirements.txt                 # easy pip install
+├── environment.yml                  # easy conda install (alternative)
+├── setup.sh                         # optional setup script (makes folders etc.)
+│
+├── data/                             # (folder created after cloning, user must download data manually)
+│   ├── README.md                     # <- explain here: "Download datasets manually to this folder"
+│   ├── ncbi/                         
+│   ├── gtdb/
+│   ├── eukprot/
+│   ├── uniprot/
+│   └── metadata/
+│
+├── scripts/                         # all code
+│   ├── download/
+│   │   └── download_ncbi_uniprot.py
+│   │   └── download_gtdb_eukprot.py
+│   │
+│   ├── parsing/
+│   │   └── rename_fasta_headers.py
+│   │   └── organize_faa_files.py
+│   │
+│   ├── metadata/
+│   │   ├── parse_metadata_pandas.py
+│   │   ├── parse_metadata_dask.py
+│   │   ├── parse_metadata_polars.py
+│   │   ├── common_metadata_functions.py
+│   │   ├── benchmark_metadata_parsing.py
+│   │   └── benchmark_metadata_parsing.md
+│   │
+│   └── comparisons/
+│       ├── compare_genome_counts.py
+│       └── generate_comparison_plots.py
+│
+├── results/                         # outputs after processing
+│   ├── processed_proteomes/
+│   ├── cleaned_metadata/
+│   ├── analysis/
+│   └── logs/
+│
+└── notebooks/                       # optional, exploratory jupyter notebooks
+    └── exploratory_data_analysis.ipynb
